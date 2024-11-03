@@ -68,3 +68,26 @@ const rows = [];
 
 // }
 
+// iteration statement will tell loop hwat to do with iterator after each run. when you reassign variable, you can use the variable to reference the previous value before reassignment. this allows you to do things like add 3 to existing num. for example bees = bees + 3
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(i);
+}
+
+let result = "";
+console.log(result);
+
+
+// for..of loop iterates over each item in an iterable ibject and temporarily assigns it to a variable
+
+// for (const value of iterable) {
+
+// }
+
+
+for (const row of rows) {
+    result = result + "\n" + row;
+  }
+
+// all numbers will appear on same line
+

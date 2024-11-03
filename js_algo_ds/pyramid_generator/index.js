@@ -27,3 +27,8 @@ console.log(cities);
 // arrays have methods. push method allows pushing a value to the end of the array. 
 
 rows.push("freeCodeCamp");
+
+// pop method removes last element from array and returns the element
+
+let popped = rows.pop();
+console.log(popped);

@@ -32,3 +32,8 @@ rows.push("freeCodeCamp");
 
 let popped = rows.pop();
 console.log(popped);
+
+let pushed = rows.push("freeCodeCamp");
+console.log(pushed);
+
+//  push returns the new length of the array, after adding the new value, not the actual value added

@@ -19,3 +19,11 @@ cities[cities.length - 1] = "Mexico City";
 
 
 console.log(cities);
+
+// method in js is a function that's associated with certain values or objects
+
+// .log() is a method of the console object
+
+// arrays have methods. push method allows pushing a value to the end of the array. 
+
+rows.push("freeCodeCamp");

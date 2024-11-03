@@ -116,3 +116,8 @@ console.log(result);
 function padRow(name) {
     return name;
 }
+
+const call = padRow("James");
+console.log(call);
+
+// params need to be given a value when you call the function. when you pass a value to a function call, that value is referred to as an "argument".

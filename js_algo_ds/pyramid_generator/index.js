@@ -56,6 +56,15 @@ const rows = [];
 
 // Assign it the value 0 to start. This will give the i variable the value 0 the first time your loop runs.
 
-for (let i = 0; ) {
-    
-}
+// for (let i = 0; ) {
+
+// }
+
+// condition of loop tells loop how many times to iterate. when the condition becomes false, the loop stops
+
+
+
+// for (let i = 0; i < count; ) {
+
+// }
+

@@ -14,6 +14,8 @@ rows[2] = 10;
 
 // rows[rows.length - 1] = 10;
 
-let cities = ["London", "New York", "Mexico City"];
+let cities = ["London", "New York", "Mumbai"];
+cities[cities.length - 1] = "Mexico City";
+
 
 console.log(cities);

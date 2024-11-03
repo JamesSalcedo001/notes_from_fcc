@@ -110,3 +110,9 @@ console.log(result);
 // when value is explicitly written in code it is called "Hard Coding"
 
 // instead of hard coding, define params for function. params are special variables that are given a value when you call the function and can be used in function to dynamically change result of function's code.
+
+// functions can return hard coded values or values stored in variables. params are special variables for function so they can be returned. 
+
+function padRow(name) {
+    return name;
+}

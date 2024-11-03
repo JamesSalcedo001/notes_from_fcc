@@ -128,3 +128,9 @@ function addTwoNumbers(num1, num2) {
 
 const sum = addTwoNumbers(5, 10);
 console.log(sum);
+
+// global scope: declared outside of any block like a function or for loop are global. 
+
+// local scope/block scope: variable declared inside a function can only be used inside the function. 
+
+// return keyword does not just define a value to be returned from your function, it also stops the execution of your code inside a function or block statement.

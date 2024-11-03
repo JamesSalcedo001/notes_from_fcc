@@ -71,10 +71,16 @@ const rows = [];
 // iteration statement will tell loop hwat to do with iterator after each run. when you reassign variable, you can use the variable to reference the previous value before reassignment. this allows you to do things like add 3 to existing num. for example bees = bees + 3
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(i);
+    rows.push(character.repeat(i));
 }
 
 let result = "";
+
+
+for (const row of rows) {
+    result = result + "\n" + row;
+  }
+
 console.log(result);
 
 
@@ -85,9 +91,10 @@ console.log(result);
 // }
 
 
-for (const row of rows) {
-    result = result + "\n" + row;
-  }
-
 // all numbers will appear on same line
 
+
+
+// i variable represents the current "row" number in your loop, enabling you to use it for crafting pyramid like structure
+
+// repeat method for strings accepts a number as an argument specifiying the number of times to repeat the target string. 

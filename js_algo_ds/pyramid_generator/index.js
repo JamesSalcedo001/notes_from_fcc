@@ -71,7 +71,7 @@ const rows = [];
 // iteration statement will tell loop hwat to do with iterator after each run. when you reassign variable, you can use the variable to reference the previous value before reassignment. this allows you to do things like add 3 to existing num. for example bees = bees + 3
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(character.repeat(i));
+    rows.push(character.repeat(i + 1));
 }
 
 let result = "";
@@ -98,3 +98,15 @@ console.log(result);
 // i variable represents the current "row" number in your loop, enabling you to use it for crafting pyramid like structure
 
 // repeat method for strings accepts a number as an argument specifiying the number of times to repeat the target string. 
+
+// function name(parameter) {
+// }
+
+// function keyword tells JS that name variable is going to be a function. parameter is variable that represents value that is passed into function when used. function may have as many or as few params as one wants.
+
+
+// all functions return a value, and by default this value is undefined. in order to return something else one must use the return keyword
+
+// when value is explicitly written in code it is called "Hard Coding"
+
+// instead of hard coding, define params for function. params are special variables that are given a value when you call the function and can be used in function to dynamically change result of function's code.

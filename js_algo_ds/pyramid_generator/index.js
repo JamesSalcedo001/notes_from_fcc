@@ -121,3 +121,10 @@ const call = padRow("James");
 console.log(call);
 
 // params need to be given a value when you call the function. when you pass a value to a function call, that value is referred to as an "argument".
+
+function addTwoNumbers(num1, num2) {
+    return num1 + num2;
+}
+
+const sum = addTwoNumbers(5, 10);
+console.log(sum);

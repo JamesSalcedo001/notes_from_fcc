@@ -134,3 +134,8 @@ console.log(sum);
 // local scope/block scope: variable declared inside a function can only be used inside the function. 
 
 // return keyword does not just define a value to be returned from your function, it also stops the execution of your code inside a function or block statement.
+
+// a function can return a value for your application to consume separately. in a function, the return keyword is used to specify a return value.
+
+
+

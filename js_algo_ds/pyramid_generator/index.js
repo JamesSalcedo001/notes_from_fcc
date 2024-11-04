@@ -70,9 +70,9 @@ const rows = [];
 
 // iteration statement will tell loop hwat to do with iterator after each run. when you reassign variable, you can use the variable to reference the previous value before reassignment. this allows you to do things like add 3 to existing num. for example bees = bees + 3
 
-for (let i = 0; i < count; i = i + 1) {
-    rows.push(character.repeat(i + 1));
-}
+// for (let i = 0; i < count; i = i + 1) {
+//     rows.push(character.repeat(i + 1));
+// }
 
 let result = "";
 
@@ -113,21 +113,21 @@ console.log(result);
 
 // functions can return hard coded values or values stored in variables. params are special variables for function so they can be returned. 
 
-function padRow(name) {
-    return name;
-}
+// function padRow(name) {
+//     return name;
+// }
 
-const call = padRow("James");
-console.log(call);
+// const call = padRow("James");
+// console.log(call);
 
 // params need to be given a value when you call the function. when you pass a value to a function call, that value is referred to as an "argument".
 
-function addTwoNumbers(num1, num2) {
-    return num1 + num2;
-}
+// function addTwoNumbers(num1, num2) {
+//     return num1 + num2;
+// }
 
-const sum = addTwoNumbers(5, 10);
-console.log(sum);
+// const sum = addTwoNumbers(5, 10);
+// console.log(sum);
 
 // global scope: declared outside of any block like a function or for loop are global. 
 
@@ -139,3 +139,12 @@ console.log(sum);
 
 
 
+function padRow(rowNumber, rowCount) {
+    return character.repeat(rowNumber);
+}
+
+// a function call allows you to actually use a function. methods like .push() are function calls. a function is called by referencing a function's name. 
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow());
+}

@@ -210,7 +210,13 @@ function padRow(rowNumber, rowCount) {
 
 // different version of iteration using subtraction assignment operator
 
-for (let i = count; i > 0; i -= 1) {
+// for (let i = count; i > 0; i -= 1) {
+//     rows.push(padRow(i, count));
+// }
+
+// us the decrement operator
+
+for (let i = count; i > 0; i--) {
     rows.push(padRow(i, count));
 }
 

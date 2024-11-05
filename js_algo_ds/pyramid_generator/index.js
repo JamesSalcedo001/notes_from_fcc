@@ -42,9 +42,9 @@
 
 // const variables cannot be reassigned like let variable. it also cannot be uninitialized whereas let can. 
 
-const character = "#";
-const count = 8;
-const rows = [];
+// const character = "#";
+// const count = 8;
+// const rows = [];
 
 // when you have to perform a task repeatedly until a condition is met, you use a loop. for loop:
 
@@ -74,14 +74,14 @@ const rows = [];
 //     rows.push(character.repeat(i + 1));
 // }
 
-let result = "";
+// let result = "";
 
 
-for (const row of rows) {
-    result = result + "\n" + row;
-  }
+// for (const row of rows) {
+//     result = result + "\n" + row;
+//   }
 
-console.log(result);
+// console.log(result);
 
 
 // for..of loop iterates over each item in an iterable ibject and temporarily assigns it to a variable
@@ -139,12 +139,42 @@ console.log(result);
 
 
 
-function padRow(rowNumber, rowCount) {
-    return character.repeat(rowNumber);
-}
+// function padRow(rowNumber, rowCount) {
+//     return character.repeat(rowNumber);
+// }
 
 // a function call allows you to actually use a function. methods like .push() are function calls. a function is called by referencing a function's name. 
 
-for (let i = 0; i < count; i = i + 1) {
-    rows.push(padRow());
+// for (let i = 0; i < count; i = i + 1) {
+//     rows.push(padRow(i + 1, count));
+// }
+
+
+// the values you provide to a function call are referred to as arguments and you pass arguments to a function call. 
+
+
+
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return " ".repeat(rowCount - rowNumber) + character.repeat(rowNumber) + " ".repeat(rowCount - rowNumber);
 }
+
+
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow(i + 1, count));
+}
+  
+let result = ""
+  
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+  
+console.log(result);
+
+
+// you can pass full expressions as an argument. the function will recieve the result of evaluating that expression.

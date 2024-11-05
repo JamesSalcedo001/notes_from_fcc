@@ -191,9 +191,24 @@ function padRow(rowNumber, rowCount) {
 
 // update so that loop runs when i is 8
 
-for (let i = 1; i <= count; i++) {
-    rows.push(padRow(i, count));
+// use different kind of loop
+
+// for (let i = 1; i <= count; i++) {
+//     rows.push(padRow(i, count));
+// }
+
+
+let continueLoop = false;
+let done = 0;
+
+while (done !== count) {
+    done++;
+    rows.push(padRow(done, count));
+    if (done === count) {
+        continueLoop = false;
+    }
 }
+
   
 let result = ""
   
@@ -209,3 +224,25 @@ console.log(result);
 // the addition assignment operator can be used as shorthand to mean take the original calue of the variable, add this value, and assign the result back to the variable. 
 
 // increment operator increases value of variable by 1, updating the assignment for that variable
+
+
+// if statements allow you to run a block of code only when a condition is met. 
+
+// if(condition) {
+//     logic
+// }
+
+// else if statements allow tou to check multiple conditions in a single block of code
+
+// if (condition) {
+//     // code to run if cond1 = true
+// } else if (condition2) {
+//     // code to run if cond2 = true
+// } else if (condition3) {
+//     // code to run if cond3 = true
+// }
+
+
+// if cond1 is false, js checks the next cond in the chain, if second is false, js checks third cond etc.
+
+

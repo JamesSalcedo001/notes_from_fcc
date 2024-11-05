@@ -261,3 +261,5 @@ console.log(result);
 
 
 // subtraction assignment operator subtracts the given value from the current variable then assigns the result back to the variable
+
+// unshift method of an array allows you to add a value to the beginning of the array, the opposite of push, which adds the value at the end. unshift returns the new length of the array it was called on

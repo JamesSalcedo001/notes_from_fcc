@@ -216,9 +216,18 @@ function padRow(rowNumber, rowCount) {
 
 // us the decrement operator
 
-for (let i = count; i > 0; i--) {
-    rows.push(padRow(i, count));
-}
+// for (let i = count; i > 0; i--) {
+//     rows.push(padRow(i, count));
+// }
+
+
+const numbers = [1, 2, 3];
+
+const unshifted = numbers.unshift(5);
+
+console.log(unshifted);
+
+console.log(numbers);
 
   
 let result = ""
@@ -263,3 +272,6 @@ console.log(result);
 // subtraction assignment operator subtracts the given value from the current variable then assigns the result back to the variable
 
 // unshift method of an array allows you to add a value to the beginning of the array, the opposite of push, which adds the value at the end. unshift returns the new length of the array it was called on
+
+
+// shift method of array removes first element from array, the opposite of pop, which removes the last element. 

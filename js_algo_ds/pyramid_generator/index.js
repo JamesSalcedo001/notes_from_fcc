@@ -159,7 +159,7 @@ const count = 8;
 const rows = [];
 
 function padRow(rowNumber, rowCount) {
-    return " ".repeat(rowCount - rowNumber) + character.repeat(rowNumber) + " ".repeat(rowCount - rowNumber);
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
 }
 
 
@@ -178,3 +178,4 @@ console.log(result);
 
 
 // you can pass full expressions as an argument. the function will recieve the result of evaluating that expression.
+

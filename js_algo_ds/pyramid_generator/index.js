@@ -175,10 +175,24 @@ function padRow(rowNumber, rowCount) {
 // }
 
 
-// change to use the increment operator
+// change to use the increment operator for loop iteration
 
-for (let i = 0; i < count; i++) {
-    rows.push(padRow(i + 1, count));
+// for (let i = 0; i < count; i++) {
+//     rows.push(padRow(i + 1, count));
+// }
+
+
+// change to make it a one-indexed loop and update first argument of padRow to be just i instead of i + 1
+
+// for (let i = 1; i < count; i++) {
+//     rows.push(padRow(i, count));
+// }
+
+
+// update so that loop runs when i is 8
+
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
 }
   
 let result = ""

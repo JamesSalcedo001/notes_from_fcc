@@ -157,6 +157,8 @@
 const character = "#";
 const count = 8;
 const rows = [];
+let inverted = true;
+
 
 function padRow(rowNumber, rowCount) {
     return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
@@ -221,17 +223,28 @@ function padRow(rowNumber, rowCount) {
 // }
 
 
-const numbers = [1, 2, 3];
-const shifted = numbers.shift();
-console.log(shifted);
+// const numbers = [1, 2, 3];
+// const shifted = numbers.shift();
+// console.log(shifted);
 
-const unshifted = numbers.unshift(5);
+// const unshifted = numbers.unshift(5);
 
-console.log(unshifted);
+// console.log(unshifted);
 
-console.log(numbers);
+// console.log(numbers);
 
   
+// update loop body to add new rows to beginning of array instead of end of array
+
+for (let i = 1; i <= count; i++) {
+    if (inverted) {
+        rows.unshift(padRow(i, count));
+    } 
+}
+
+
+
+
 let result = ""
   
 for (const row of rows) {

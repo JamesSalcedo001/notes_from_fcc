@@ -198,15 +198,11 @@ function padRow(rowNumber, rowCount) {
 // }
 
 
-let continueLoop = false;
 let done = 0;
 
-while (done !== count) {
+while (done <= count) {
     done++;
     rows.push(padRow(done, count));
-    if (done === count) {
-        continueLoop = false;
-    }
 }
 
   
@@ -246,3 +242,4 @@ console.log(result);
 // if cond1 is false, js checks the next cond in the chain, if second is false, js checks third cond etc.
 
 
+// when a variable is declared but never used, it is called an unused declaration, and it is usually best to avoid this

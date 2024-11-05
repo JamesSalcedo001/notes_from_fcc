@@ -164,7 +164,20 @@ function padRow(rowNumber, rowCount) {
 
 
 
-for (let i = 0; i < count; i = i + 1) {
+// for (let i = 0; i < count; i = i + 1) {
+//     rows.push(padRow(i + 1, count));
+// }
+
+// change to use addition assignment operator
+
+// for (let i = 0; i < count; i += 1) {
+//     rows.push(padRow(i + 1, count));
+// }
+
+
+// change to use the increment operator
+
+for (let i = 0; i < count; i++) {
     rows.push(padRow(i + 1, count));
 }
   
@@ -179,3 +192,6 @@ console.log(result);
 
 // you can pass full expressions as an argument. the function will recieve the result of evaluating that expression.
 
+// the addition assignment operator can be used as shorthand to mean take the original calue of the variable, add this value, and assign the result back to the variable. 
+
+// increment operator increases value of variable by 1, updating the assignment for that variable

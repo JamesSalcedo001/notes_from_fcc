@@ -198,11 +198,9 @@ function padRow(rowNumber, rowCount) {
 // }
 
 
-let done = 0;
 
-while (done <= count) {
-    done++;
-    rows.push(padRow(done, count));
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
 }
 
   

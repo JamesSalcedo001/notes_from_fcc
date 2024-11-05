@@ -204,8 +204,14 @@ function padRow(rowNumber, rowCount) {
 // }
 
 
-for (let i = count; i > 0; false) {
+// for (let i = count; i > 0; i = i - 1) {
+//     rows.push(padRow(i, count));
+// }
 
+// different version of iteration using subtraction assignment operator
+
+for (let i = count; i > 0; i -= 1) {
+    rows.push(padRow(i, count));
 }
 
   
@@ -246,3 +252,6 @@ console.log(result);
 
 
 // when a variable is declared but never used, it is called an unused declaration, and it is usually best to avoid this
+
+
+// subtraction assignment operator subtracts the given value from the current variable then assigns the result back to the variable
